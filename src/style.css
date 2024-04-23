@@ -1,0 +1,297 @@
+@import url ('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* barra superior */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Verdana, sans-serif;
+}
+
+body{
+overflow: auto;
+background-image: url("/arquivos/teste.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin-top: 600px;
+height: 0;
+width: 0;
+}
+
+.container{
+width: 100%;
+min-height: 100vh;
+text-decoration: none;
+}
+
+nav{
+display: flex;
+cursor: pointer;
+justify-content: space-around;
+position: fixed;
+width: 100%;
+height: 80px;
+line-height: 80px;
+top: 0;
+}
+
+.logo{
+display: flex;
+font-size: 40px;
+font-weight: 800;
+color: grey;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+.navItems{
+display: flex;
+}
+
+.navItems li{
+list-style: none;
+margin: 0 40px;
+}
+
+.navItems li a{
+font-size: 15px;
+color: grey;
+letter-spacing: 3px;
+text-decoration: none;
+}
+
+.navItems li:hover a{
+color: #483d8b;
+}
+
+.links a{
+font-size: 20px;
+color: grey;
+width: 100%;
+position: center;
+left: 150px;
+margin: 10px 10px;
+}
+
+/* box cinza */
+
+.box{
+margin: 0 auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 1300px;
+height: 400px;
+opacity: 0.1;
+}
+
+#glass-box{
+background: grey;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 165, 0.5 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* caixa de input do usuário*/
+
+.input{
+position: absolute;
+top: 50%;
+left: 70%;
+transform: translate(-50%, -50%);
+}
+
+.palavras{
+color: #6b3fa0;
+}
+
+#titulo{
+position: relative;
+top: 0px;
+left: 50%;
+transform: translate(-50%, -150%);
+}
+
+#cep {
+top: 16px;
+left: 114px;
+width: 800px;
+transform: translate(-50%, -50%);
+border-radius: 50px;
+padding: 12px;
+border: 1px solid #ccc;
+position: relative;
+}
+
+.box-c {
+position: relative;
+}
+
+.box-c::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 1%;
+height: 50%;
+background-color: black;
+border-radius: 10px;
+z-index: -1;
+}
+
+.button-container {
+text-align: center;
+}
+
+.centered-button {
+text-decoration: none !important;
+display: flex;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+padding: 6px 13px;
+margin: 40px 5px;
+font-size: 15px;
+background-color: #6b3fa0;
+color: white;
+}
+
+.centered-button:hover {
+background-color: #9862D8;
+}
+
+#button{
+position: absolute;
+top: 19%;
+left: 61%;
+transform: translate(-50%, -50%);
+background-color: #6b3fa0;
+}
+
+#button-footer:hover{
+background-color: #9862D8;
+}
+
+.lupa {
+width: 12px;
+height: 12px;
+border: 1px solid white;
+border-radius: 50%;
+opacity: 0.5;
+position: relative;
+left: 61.5%;
+transform: translate(-65%, -280%);
+}
+
+.lupa:after {
+position: absolute;
+width: 50%;
+height: 1px;
+background-color: white;
+display: block;
+content: "";
+top: -10px;
+left: -15px;
+transform: rotate(45deg);
+transform-origin: -10px 40px;
+}
+
+/* slide carrossel */
+
+.seta-comando{
+display: flex;
+justify-content: center;
+margin: 25px 0;
+height: 100px;
+}
+
+button {
+background-color: transparent;
+opacity: 0.5;
+cursor: pointer;
+border: none;
+border-radius: 8px;
+position: absolute;
+top: 35%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+color: grey;
+font-size: 20px;
+}
+
+#anterior {
+left: 10px;
+}
+
+#posterior {
+right: 10px;
+}
+
+.explorar{
+width: 100%;
+position: absolute;
+top: 135%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.explorar-container{
+margin: 0 auto;
+display: flex;
+height: 400px;
+align-items: center;
+max-width: 1000px;
+position: relative;
+}
+
+.imagem{
+opacity: 0;
+position: absolute;
+width: 330px;
+height: 200px;
+border-radius: 15px;
+background-size: contain;
+transition: all 0.3s ease-int-out;
+transform: translateX(-50%);
+z-index: 0;
+}
+
+#im01{
+left: 15%;
+opacity: 0.4;
+}
+
+#im02{
+left: 30%;
+opacity: 0.8;
+width: 380px;
+height: 250px;
+z-index: 1;
+}
+
+#im03{
+left: 50%;
+opacity: 1;
+width: 430px;
+height: 300px;
+z-index: 2;
+}
+
+#im04{
+left: 70%;
+opacity: 0.8;
+width: 380px;
+height: 250px;
+z-index: 1;
+}
+
+#im05{
+left: 85%;
+opacity: 0.4;
+}

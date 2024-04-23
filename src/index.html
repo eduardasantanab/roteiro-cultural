@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <title>Web Mobile</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="logo">PWM</div>
+        <ul class="navItems">
+            <li><a href="background.html">Início</a></li>
+            <li><a href="background.html">Loja</a></li>
+            <li><a href="background.html">Novidades</a></li>
+        </ul>
+
+        <div class="links">
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+    </nav>
+
+
+    <div class="box" id="glass-box"></div>
+    <form action="" class="input">
+        <h3 class="palavras" id="titulo">Buscar Museus</h3>
+        <br>
+        <label for="cep" class="palavras" id="nome"></label>
+        <input type="text" class="box-c" name="cep" id="cep" placeholder="Digite o seu CEP">
+        <br>
+        <div class="button-container">
+            <input type="submit" name="send" value=" " class="centered-button" id="button"/>
+            <div class="lupa"></div>
+        </div>
+    </form>
+
+    <div class="explorar">
+        <figure class="explorar-container">
+            <img class="imagem imagem-01" src="/arquivos/brennand.jpg" id="im01">
+            <img class="imagem imagem-02" src="/arquivos/cais.jpg" id="im02">
+            <img class="imagem imagem-03" src="/arquivos/forte-5-pontas.png" id="im03">
+            <img class="imagem imagem-04" src="/arquivos/homem-do-nordeste.jpg" id="im04">
+            <img class="imagem imagem-05" src="/arquivos/museu-la-greca.jpg" id="im05">
+        </figure>
+
+        <div class="seta-comando">
+            <button id="anterior" class="fas fa-chevron-left" ></button>
+            <button id="posterior" class="fas fa-chevron-right" ></button>
+        </div>
+    </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+<script  src="./script.js"></script>
+</body>
+</html>
