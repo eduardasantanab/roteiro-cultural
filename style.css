@@ -99,7 +99,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* caixa de input do usuário*/
 
-.input{
+.forms-container {
 position: absolute;
 top: 50%;
 left: 70%;

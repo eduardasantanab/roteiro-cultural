@@ -1,32 +1,34 @@
-const forms = document.querrySelector('input')
-const campo = document.querrySelector('box-c')
-const valorInput = ''
+document.addEventListener('DOMContentLoaded', function () {
 
-forms.addEventListener('submit', function(e) {
-    e.preventDefault()
-    valorInput = campo.value
-    campo.value = ''
-})
+    var forms = document.querySelector('.forms-container')
+    var campo = document.querySelector('.box-c')
+    var valorInput = ''
 
-
-const api = async () => {
+    forms.addEventListener('submit', async function(e) {
+        e.preventDefault()
+        valorInput = campo.value.trim()
+        console.log(valorInput);
     
-    const url = "https://viacep.com.br/ws/";
-
-    try {
-        const response = await fetch(url);
-
-        if (!response.ok) {
-            throw new Error('Erro ao obter os dados.');
+        const url = `https://viacep.com.br/ws/${valorInput}/json`;
+    
+        try {
+            const response = await fetch(url);
+    
+            if (!response.ok) {
+                throw new Error('Erro ao obter os dados.');
+            }
+    
+            const data = await response.json();
+            console.log(data);
+    
+            return data;
+    
+        } catch (error) {
+            console.error('Ocorreu um erro:', error);
+            throw error;
         }
-
-        const data = await response.json();
-        console.log(data);
-        return data;
-    } catch (error) {
-        console.error('Ocorreu um erro:', error);
-        throw error;
-    }
-};
-
-export default api;
+        finally {
+            campo.value = ''
+        }
+    });
+});
