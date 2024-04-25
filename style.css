@@ -32,15 +32,6 @@ nav{
     top: 0;
 }
     
-.logo{
-    display: flex;
-    font-size: 40px;
-    font-weight: 800;
-    color: grey;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-    
 .navItems{
     display: flex;
 }
@@ -48,6 +39,8 @@ nav{
 .navItems li{
     list-style: none;
     margin: 0 40px;
+    position: relative;
+    top: 20%;
 }
     
 .navItems li a{
@@ -65,8 +58,9 @@ nav{
     font-size: 20px;
     color: #6b3fa0;
     width: 100%;
-    position: center;
-    left: 150px;
+    position: relative;
+    top: 20%;
+    left: 90%;
     margin: 10px 10px;
 }
 
@@ -75,7 +69,7 @@ nav{
 .box{
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1300px;
@@ -96,7 +90,7 @@ nav{
     
 .forms-container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 70%;
     transform: translate(-50%, -50%);
 }
@@ -108,7 +102,7 @@ nav{
 #titulo{
     font-weight: bold;
     position: relative;
-    top: 0px;
+    top: 45px;
     left: 50%;
     transform: translate(-48%, -150%);
 }
@@ -131,9 +125,6 @@ nav{
     
 .box-c::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 1%;
     height: 50%;
     background-color: black;
