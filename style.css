@@ -8,7 +8,6 @@
     
 body{
     overflow: auto;
-    background-image: url("/arquivos/teste.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,8 +69,8 @@ nav{
     left: 150px;
     margin: 10px 10px;
 }
-    
-    /* box cinza */
+
+/* box cinza */
     
 .box{
     margin: 0 auto;
@@ -92,8 +91,8 @@ nav{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-    
-    /* caixa de input do usuário*/
+
+/* caixa de input do usuário*/
     
 .forms-container {
     position: absolute;
@@ -151,10 +150,9 @@ nav{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    padding: 6px 13px;
+    padding: 6px 15px;
     margin: 40px 5px;
     font-size: 15px;
-    background-color: #6b3fa0;
     color: white;
 }
     
@@ -165,8 +163,8 @@ nav{
 #button{
     position: fixed;
     top: 27%;
-    left: 58.5%;
-    background-color: #6b3fa0;
+    left: 58.4%;
+    background-color: #EABC17;
 }
     
 #button-footer:hover{
@@ -197,7 +195,7 @@ nav{
     transform-origin: -10px 40px;
 }
     
-    /* slide carrossel */
+/* slide carrossel */
     
 .slideshow-container {
     position: absolute;
