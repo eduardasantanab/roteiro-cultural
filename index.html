@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <title>Web Mobile</title>
 </head>
 <body>
+
 <div class="container">
     <nav>
         <div class="logo">PWM</div>
@@ -37,24 +37,52 @@
             <div class="lupa"></div>
         </div>
     </form>
-
-    <div class="explorar">
-        <figure class="explorar-container">
-            <img class="imagem imagem-01" src="/arquivos/brennand.jpg" id="im01">
-            <img class="imagem imagem-02" src="/arquivos/cais.jpg" id="im02">
-            <img class="imagem imagem-03" src="/arquivos/forte-5-pontas.png" id="im03">
-            <img class="imagem imagem-04" src="/arquivos/homem-do-nordeste.jpg" id="im04">
-            <img class="imagem imagem-05" src="/arquivos/museu-la-greca.jpg" id="im05">
-        </figure>
-
-        <div class="seta-comando">
-            <button id="anterior" class="fas fa-chevron-left" ></button>
-            <button id="posterior" class="fas fa-chevron-right" ></button>
-        </div>
-    </div>
 </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-<script  src="./script.js"></script>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="/arquivos/brennand.jpg" style="width:100%">
+        <div class="text">Instituto Brennand</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="/arquivos/cais.jpg" style="width:100%">
+        <div class="text">Cais do Sertão</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="/arquivos/forte-5-pontas.png" style="width:100%">
+        <div class="text">Forte das 5 pontas</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="/arquivos/homem-do-nordeste.jpg" style="width:100%">
+        <div class="text">Museu do Homem do Nordeste</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="/arquivos/museu-la-greca.jpg" style="width:100%">
+        <div class="text">Museu La Greca</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script  src="scripts.js"></script>
 </body>
 </html>
