@@ -15,7 +15,7 @@ background-image: url("/arquivos/teste.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
-margin-top: 600px;
+margin-top: 700px;
 height: 0;
 width: 0;
 }
@@ -166,10 +166,9 @@ background-color: #9862D8;
 }
 
 #button{
-position: absolute;
-top: 19%;
-left: 61%;
-transform: translate(-50%, -50%);
+position: fixed;
+top: 27%;
+left: 58.5%;
 background-color: #6b3fa0;
 }
 
@@ -184,8 +183,8 @@ border: 1px solid white;
 border-radius: 50%;
 opacity: 0.5;
 position: relative;
-left: 61.5%;
-transform: translate(-65%, -280%);
+left: 60.8%;
+transform: translate(-40%, -320%);
 }
 
 .lupa:after {
