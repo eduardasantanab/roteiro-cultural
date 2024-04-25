@@ -63,7 +63,7 @@ nav{
     
 .links a{
     font-size: 20px;
-    color: grey;
+    color: #eabc17;
     width: 100%;
     position: center;
     left: 150px;
@@ -126,6 +126,7 @@ nav{
     
 .box-c {
     position: relative;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
     
 .box-c::before {
@@ -156,19 +157,15 @@ nav{
     color: white;
 }
     
-.centered-button:hover {
-    background-color: #9862D8;
-}
-    
 #button{
     position: fixed;
     top: 27%;
     left: 58.4%;
-    background-color: #EABC17;
+    background-color: #eabc17;
 }
     
-#button-footer:hover{
-    background-color: #9862D8;
+#button:hover{
+    background-color: #6b3fa0;
 }
     
 .lupa {
