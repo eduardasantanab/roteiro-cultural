@@ -295,4 +295,15 @@ nav{
     to {opacity: 1}
 }
 
+/*  Footer */
+
+footer{
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 10px;
+}
+
 /* Responsividade */
