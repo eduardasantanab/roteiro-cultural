@@ -63,7 +63,7 @@ nav{
     
 .links a{
     font-size: 20px;
-    color: #eabc17;
+    color: #6b3fa0;
     width: 100%;
     position: center;
     left: 150px;
@@ -88,7 +88,7 @@ nav{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 165, 0.5 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
+    border-radius: 100px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -161,11 +161,11 @@ nav{
     position: fixed;
     top: 27%;
     left: 58.4%;
-    background-color: #eabc17;
+    background-color: #6b3fa0;
 }
     
 #button:hover{
-    background-color: #6b3fa0;
+    background-color: #eabc17;
 }
     
 .lupa {
