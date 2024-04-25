@@ -1,301 +1,304 @@
 /* barra superior */
 
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
 }
 
 body{
-overflow: auto;
-background-image: url("/arquivos/teste.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin-top: 1800px;
-height: 0;
-width: 0;
+    overflow: auto;
+    background-image: url("/arquivos/teste.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 1800px;
+    height: 0;
+    width: 0;
 }
 
-.container{
-width: 100%;
-min-height: 100vh;
-text-decoration: none;
+main {
+    width: 100%;
+    min-height: 100vh;
+    text-decoration: none;
 }
 
 nav{
-display: flex;
-cursor: pointer;
-justify-content: space-around;
-position: fixed;
-width: 100%;
-height: 80px;
-line-height: 80px;
-top: 0;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    top: 0;
 }
 
 .logo{
-display: flex;
-font-size: 40px;
-font-weight: 800;
-color: grey;
-letter-spacing: 3px;
-text-transform: uppercase;
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: grey;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .navItems{
-display: flex;
+    display: flex;
 }
 
 .navItems li{
-list-style: none;
-margin: 0 40px;
+    list-style: none;
+    margin: 0 40px;
 }
 
 .navItems li a{
-font-size: 15px;
-color: grey;
-letter-spacing: 3px;
-text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    letter-spacing: 3px;
+    text-decoration: none;
 }
 
 .navItems li:hover a{
-color: #483d8b;
+    color: #483d8b;
 }
 
 .links a{
-font-size: 20px;
-color: grey;
-width: 100%;
-position: center;
-left: 150px;
-margin: 10px 10px;
+    font-size: 20px;
+    color: grey;
+    width: 100%;
+    position: center;
+    left: 150px;
+    margin: 10px 10px;
 }
 
 /* box cinza */
 
 .box{
-margin: 0 auto;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 1300px;
-height: 400px;
-opacity: 0.1;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    height: 400px;
+    opacity: 0.1;
 }
 
 #glass-box{
-background: grey;
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 165, 0.5 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: grey;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 165, 0.5 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* caixa de input do usuário*/
 
 .forms-container {
-position: absolute;
-top: 50%;
-left: 70%;
-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
 }
 
 .palavras{
-color: #6b3fa0;
+    color: #6b3fa0;
 }
 
 #titulo{
-font-weight: bold;
-position: relative;
-top: 0px;
-left: 50%;
-transform: translate(-48%, -150%);
+    font-weight: bold;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-48%, -150%);
 }
 
 #cep {
-top: 16px;
-left: 114px;
-width: 800px;
-transform: translate(-50%, -50%);
-border-radius: 50px;
-padding: 12px;
-border: 1px solid #ccc;
-position: relative;
+    top: 16px;
+    left: 114px;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    position: relative;
 }
 
 .box-c {
-position: relative;
+    position: relative;
 }
 
 .box-c::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 1%;
-height: 50%;
-background-color: black;
-border-radius: 10px;
-z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 50%;
+    background-color: black;
+    border-radius: 10px;
+    z-index: -1;
 }
 
 .button-container {
-text-align: center;
+    text-align: center;
 }
 
 .centered-button {
-text-decoration: none !important;
-display: flex;
-border: none;
-border-radius: 50px;
-cursor: pointer;
-padding: 6px 13px;
-margin: 40px 5px;
-font-size: 15px;
-background-color: #6b3fa0;
-color: white;
+    text-decoration: none !important;
+    display: flex;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 6px 13px;
+    margin: 40px 5px;
+    font-size: 15px;
+    background-color: #6b3fa0;
+    color: white;
 }
 
 .centered-button:hover {
-background-color: #9862D8;
+    background-color: #9862D8;
 }
 
 #button{
-position: fixed;
-top: 27%;
-left: 58.5%;
-background-color: #6b3fa0;
+    position: fixed;
+    top: 27%;
+    left: 58.5%;
+    background-color: #6b3fa0;
 }
 
 #button-footer:hover{
-background-color: #9862D8;
+    background-color: #9862D8;
 }
 
 .lupa {
-width: 12px;
-height: 12px;
-border: 1px solid white;
-border-radius: 50%;
-opacity: 0.5;
-position: relative;
-left: 60.8%;
-transform: translate(-40%, -320%);
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    left: 60.8%;
+    transform: translate(-40%, -320%);
 }
 
 .lupa:after {
-position: absolute;
-width: 50%;
-height: 1px;
-background-color: white;
-display: block;
-content: "";
-top: -10px;
-left: -15px;
-transform: rotate(45deg);
-transform-origin: -10px 40px;
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    content: "";
+    top: -10px;
+    left: -15px;
+    transform: rotate(45deg);
+    transform-origin: -10px 40px;
 }
 
 /* slide carrossel */
 
 .slideshow-container {
-position: absolute;
-top: 130%;
-left: 50%;
-transform: translate(-50%, -50%);
-margin: auto;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 .prev, .next {
-cursor: pointer;
-position: absolute;
-top: 35%;
-width: auto;
-margin-top: 50px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: 50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 .numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 .dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+    background-color: #717171;
 }
 
 .dot-container {
-position: absolute;
-top: 165%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-margin-top: 20px;
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 20px;
 }
 
 .dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 5px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+    background-color: #717171;
 }
 
 .fade {
-animation-name: fade;
-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
+/* Animações */
 @keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
+
+/* Responsividade */
