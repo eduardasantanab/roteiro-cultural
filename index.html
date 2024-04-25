@@ -5,13 +5,13 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <script src = "api.js"></script>
     <title>Web Mobile</title>
 </head>
 <body>
 
-<div class="container">
+<header class="header-container">
     <nav>
         <div class="logo">PWM</div>
         <ul class="navItems">
@@ -25,7 +25,9 @@
             <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
         </div>
     </nav>
+</header>
 
+<main class = "main-container">
     <div class="caixa-input">
         <div class="box" id="glass-box"></div>
         <form action="" class="forms-container">
@@ -40,52 +42,57 @@
             </div>
         </form>
     </div>
-</div>
-
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="/arquivos/brennand.jpg" width="800" height="500">
-        <div class="text">Instituto Brennand</div>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="/arquivos/brennand.jpg" width="800" height="500">
+            <div class="text">Instituto Brennand</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="/arquivos/cais.jpg"  width="800" height="500">
+            <div class="text">Cais do Sertão</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="/arquivos/forte-5-pontas.png" width="800" height="500">
+            <div class="text">Forte das 5 pontas</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="/arquivos/homem-do-nordeste.jpg"  width="800" height="500">
+            <div class="text">Museu do Homem do Nordeste</div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="/arquivos/museu-la-greca.jpg"  width="800" height="500">
+            <div class="text">Museu La Greca</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="/arquivos/cais.jpg"  width="800" height="500">
-        <div class="text">Cais do Sertão</div>
+    <br>
+    
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
+</main>
+<script src="scripts.js"></script>
 
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="/arquivos/forte-5-pontas.png" width="800" height="500">
-        <div class="text">Forte das 5 pontas</div>
-    </div>
+<footer>
+    <i class="fa-regular fa-copyright"></i>
+    <h4>Created by @marcelopetroni @eduardasantanab @matheusmgs22 @InserirGitMario</h4>
+</footer>
 
-    <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="/arquivos/homem-do-nordeste.jpg"  width="800" height="500">
-        <div class="text">Museu do Homem do Nordeste</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="/arquivos/museu-la-greca.jpg"  width="800" height="500">
-        <div class="text">Museu La Greca</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-</div>
-
-<script  src="scripts.js"></script>
 </body>
 </html>

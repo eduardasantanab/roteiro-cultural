@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, sans-serif;
 }
     
 body{
@@ -18,9 +17,8 @@ body{
     width: 0;
 }
     
-.container{
+.header-container{
     width: 100%;
-    min-height: 100vh;
     text-decoration: none;
 }
     
@@ -294,8 +292,12 @@ nav{
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+/* Animações */
     
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* Responsividade */
