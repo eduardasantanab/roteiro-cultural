@@ -339,7 +339,29 @@ nav{
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    z-index: 1;
 }
+
+.circulo-user2 {
+    background: #6b3fa0;
+    position: absolute;
+    top: 125%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+#icon{
+    color: #6b3fa0;
+    position: absolute;
+    top: 125%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 
 /*  Footer */
 
