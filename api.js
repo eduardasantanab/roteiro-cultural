@@ -1,3 +1,14 @@
+const forms = document.querrySelector('input')
+const campo = document.querrySelector('box-c')
+const valorInput = ''
+
+forms.addEventListener('submit', function(e) {
+    e.preventDefault()
+    valorInput = campo.value
+    campo.value = ''
+})
+
+
 const api = async () => {
     
     const url = "https://viacep.com.br/ws/";
