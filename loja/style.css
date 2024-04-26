@@ -131,6 +131,7 @@ nav{
     position: absolute;
     top: 80%;
     left: 83%;
+    text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
     font-size: 13px;
@@ -196,6 +197,50 @@ nav{
     position: absolute;
     top: 140%;
     left: 83%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.produto-07{
+    margin: 0 auto;
+    position: absolute;
+    top: 170%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+#produto-07{
+    position: absolute;
+    top: 200%;
+    left: 23%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.produto-08{
+    margin: 0 auto;
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+#produto-08{
+    position: absolute;
+    top: 200%;
+    left: 53%;
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
