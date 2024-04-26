@@ -1,0 +1,85 @@
+/* barra superior */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 1800px;
+    height: 0;
+    width: 0;
+}
+
+.header-container{
+    width: 100%;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    line-height: 80px;
+    top: 0;
+    box-shadow: 0 4px 16px 0 rgba( 0, 0, 0, 0.1 );
+    z-index: 1;
+}
+
+.navItems{
+    display: flex;
+    z-index: 1;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 40px;
+    position: relative;
+    top: 20%;
+    z-index: 1;
+
+}
+
+.navItems li a{
+    font-size: 15px;
+    color: grey;
+    letter-spacing: 3px;
+    text-decoration: none;
+    z-index: 1;
+
+}
+
+.navItems li:hover a{
+    color: #483d8b;
+}
+
+.links a{
+    font-size: 20px;
+    color: #6b3fa0;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    left: 90%;
+    margin: 10px 10px;
+    z-index: 1;
+}
+
+/* footer */
+
+footer{
+    position: absolute;
+    top: 240%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 10px;
+}
