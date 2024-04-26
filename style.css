@@ -32,12 +32,12 @@ nav{
     line-height: 80px;
     top: 0;
     box-shadow: 0 4px 16px 0 rgba( 0, 0, 0, 0.1 );
-    z-index: 1;
+    z-index: 3;
 }
     
 .navItems{
     display: flex;
-    z-index: 1;
+    z-index: 3;
 }
     
 .navItems li{
@@ -45,7 +45,7 @@ nav{
     margin: 0 40px;
     position: relative;
     top: 20%;
-    z-index: 1;
+    z-index: 3;
 
 }
     
