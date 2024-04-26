@@ -75,11 +75,22 @@ nav{
 
 /* footer */
 
-footer{
+#icon-footer{
     position: absolute;
-    top: 240%;
-    left: 50%;
+    top: 245%;
+    left: 39%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+}
+
+.group{
+    position: absolute;
+    top: 245%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: grey;
     font-size: 10px;
 }

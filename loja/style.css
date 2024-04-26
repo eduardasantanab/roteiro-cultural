@@ -73,143 +73,154 @@ nav{
 /* produtos */
 
 .produto-01{
-margin: 0 auto;
-position: absolute;
-top: 50%;
-left: 20%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-01{
-position: absolute;
-top: 80%;
-left: 23%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .produto-02{
-margin: 0 auto;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-02{
-position: absolute;
-top: 80%;
-left: 53%;
-text-align: center;
-transform: translate(-50%, -50%);
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 53%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .produto-03{
-margin: 0 auto;
-position: absolute;
-top: 50%;
-left: 80%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-03{
-position: absolute;
-top: 80%;
-left: 83%;
-transform: translate(-50%, -50%);
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .produto-04{
-margin: 0 auto;
-position: absolute;
-top: 110%;
-left: 20%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 110%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-04{
-position: absolute;
-top: 140%;
-left: 23%;
-text-align: center;
-transform: translate(-50%, -50%);
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 140%;
+    left: 23%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .produto-05{
-margin: 0 auto;
-position: absolute;
-top: 110%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-05{
-position: absolute;
-top: 140%;
-left: 53%;
-text-align: center;
-transform: translate(-50%, -50%);
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 140%;
+    left: 53%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .produto-06{
-margin: 0 auto;
-position: absolute;
-top: 110%;
-left: 80%;
-transform: translate(-50%, -50%);
-width: 200px;
-height: 200px;
-border-radius: 4px;
+    margin: 0 auto;
+    position: absolute;
+    top: 110%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
 }
 
 #produto-06{
-position: absolute;
-top: 140%;
-left: 83%;
-text-align: center;
-transform: translate(-50%, -50%);
-color: #008000;
-font-size: 13px;
-cursor: pointer;
+    position: absolute;
+    top: 140%;
+    left: 83%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 /* footer */
 
-footer{
+#icon-footer{
     position: absolute;
-    top: 240%;
-    left: 50%;
+    top: 245%;
+    left: 39%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+}
+
+.group{
+    position: absolute;
+    top: 245%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: grey;
     font-size: 10px;
 }
