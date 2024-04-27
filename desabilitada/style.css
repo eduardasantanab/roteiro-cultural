@@ -70,7 +70,74 @@ nav{
     margin: 10px 10px;
     z-index: 1;
 }
-/* produtos */
+
+
+
+.main-container{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .main-box{
+       display: flex;
+       justify-content: center;
+   }
+   
+   .card{
+       margin: 150px;
+       background-color: black;
+       width: 300px;
+       height: 300px;
+       border-radius: 10px;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   .card>img {
+   width: 100%;
+   border-top-left-radius:10px;
+   border-top-right-radius:10px ;
+   height: 50%;
+   
+   
+   }
+
+
+
+
+
+
+
+
+
+
+/* aqui*/
+
+
+button{
+    font-size: 10px;
+    padding: 10px 10px;
+    background-color: white;
+    border: 2px solid green;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.mycard{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.mycard img{
+
+    width:270px; 
+    height:270; 
+    border-radius: 10px;
+}
 
 .produto-01{
     margin: 0 auto;
@@ -81,6 +148,7 @@ nav{
     width: 200px;
     height: 200px;
     border-radius: 4px;
+    
 }
 
 #produto-01{
@@ -90,8 +158,8 @@ nav{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-02{
@@ -112,8 +180,8 @@ nav{
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-03{
@@ -134,8 +202,8 @@ nav{
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-04{
@@ -156,8 +224,8 @@ nav{
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-05{
@@ -178,8 +246,8 @@ nav{
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-06{
@@ -200,8 +268,8 @@ nav{
     text-align: center;
     transform: translate(-50%, -50%);
     color: #008000;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
+    
 }
 
 .produto-07{
@@ -247,6 +315,18 @@ nav{
     font-size: 13px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 
