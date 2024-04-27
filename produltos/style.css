@@ -1,3 +1,5 @@
+/* pagina inicial */
+
 .header-container{
     width: 100%;
     text-decoration: none;
@@ -54,7 +56,7 @@ nav{
 }
 
 
-/**/
+/* footer */
 
 #icon-footer{
     position: absolute;
@@ -77,13 +79,12 @@ nav{
     padding-bottom: 100px;
 }
 
-
-/**/
+/* produtos */
 
 .main-container{
- box-sizing: border-box;
- margin-top: 100px;
- padding: 0;
+    box-sizing: border-box;
+    margin-top: 150px;
+    padding: 0;
 }
 
 .main-box,.main-box2{
@@ -97,36 +98,33 @@ nav{
     background-color: white;
     color: #202020;
     width: 300px;
-    height: 400px;
+    height: 440px;
     border-radius: 10px;
     justify-content: space-between;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.card>h3{
+.card>h4{
     padding-top: 10px;
-    
 }
 
 .card>img {
-width: 100%;
-border-top-left-radius:10px;
-border-top-right-radius:10px ;
-height: 50%;
-
-
+    width: 100%;
+    height: 65%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px ;
 }
 
 button{
-padding: 10px;
-font-size: 12px;
-border: none;
-background-color: #5adb4b;
-color: white;
-border-radius: 10px;
-font-weight: 600;
-cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    background-color: #5adb4b;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 button:hover{
