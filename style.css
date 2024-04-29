@@ -85,6 +85,7 @@ main {
     justify-content: center;
     gap: 150px;
 }
+
 /* box cinza */
     
 .glass-box{
@@ -140,11 +141,11 @@ main {
     padding: 12px;
     border: 1px solid #ccc;
 }
-    
+
 .box-c {
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
-    
+
 .box-c::before {
     content: '';
     width: 1%;
@@ -386,6 +387,7 @@ main {
 
 
 /* forms usuário */
+
 .form-section {
     display: flex;
     flex-direction: column;
@@ -418,7 +420,7 @@ main {
 
 .form-title {
     font-size: 30px;
-    color: #333333;
+    color: #6b3fa0;
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -426,7 +428,7 @@ main {
 .form-label {
     align-self: flex-start;
     margin-top: 15px;
-    color: #555555;
+    color: grey;
     font-weight: 600;
 }
 
@@ -438,13 +440,13 @@ main {
 .form-email,
 .form-textarea {
     width: 400px;
-    padding: 5px;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
     font-size: 16px;
     color: #333333;
     margin-bottom: 15px;
     transition: border-color 0.3s;
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #ccc;
 }
 
 .form-input:focus,
@@ -456,7 +458,7 @@ main {
     margin-top: 25px;
     padding: 12px 25px;
     border: none;
-    background-color: #007bff;
+    background-color: #6b3fa0;
     color: #ffffff;
     border-radius: 6px;
     cursor: pointer;
@@ -465,9 +467,8 @@ main {
 }
 
 .form-button:hover {
-    background-color: #0056b3;
+    background-color: #eabc17;
 }
-
 
 /*  Footer */
 
