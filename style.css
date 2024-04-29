@@ -430,10 +430,12 @@ main {
     font-weight: 600;
 }
 
-.form-input {
+.form-message,
+.form-email {
     height: 30px;
 }
-.form-input,
+.form-message,
+.form-email,
 .form-textarea {
     width: 400px;
     padding: 5px;
