@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Rota Cultural</title>
 </head>
@@ -28,75 +29,103 @@
 
 <main class = "main-container">
     <div class="caixa-input">
-        <div class="box" id="glass-box"></div>
-        <form action="" class="forms-container">
-            <h3 class="palavras" id="titulo">Buscar Museus</h3>
-            <br>
-            <label for="cep" class="palavras" id="nome"></label>
-            <input type="text" class="box-c" name="cep" id="cep" placeholder="Digite o seu CEP">
-            <br>
-            <div class="button-container">
-                <input type="submit" name="send" value=" " class="centered-button" id="button"/>
-                <div class="lupa"></div>
+        <div class="glass-box">
+            <form action="" class="forms-container">
+                <h3 class="palavras" id="titulo">Buscar Museus</h3>
+                <div class="forms-content">
+                    <label for="cep" class="palavras" id="nome"></label>
+                    <input type="text" class="box-c" name="cep" id="cep" placeholder="Digite o seu CEP">
+                    <div class="button-container">
+                        <button type="submit" name="send" value=" " class="centered-button" id="button">
+                            <i class="fa-solid fa-magnifying-glass" class = "lupa"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <section class = "slide-section">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="/arquivos/homem-do-nordeste.jpg" width="800" height="500" style="border-radius: 10px;">
+                <div class="text">Museu do Homem do Nordeste</div>
             </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="/arquivos/cais.jpg"  width="800" height="500" style="border-radius: 10px;">
+                <div class="text">Cais do Sertão</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="/arquivos/forte-5-pontas.png" width="800" height="500" style="border-radius: 10px;">
+                <div class="text">Forte das 5 pontas</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="/arquivos/oficina-brennand.jpg"  width="800" height="500" style="border-radius: 10px;">
+                <div class="text">Instituto Brennand</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="/arquivos/museu-la-greca.jpg"  width="800" height="500" style="border-radius: 10px;">
+                <div class="text">Museu La Greca</div>
+            </div>
+        
+            <div class="arrow-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+
+        <div class="opiniao-usuario">
+            <div className="icon-container">
+                
+                <div class="sombra"></div>
+                <div class="frontal"><i class="fa fa-user" aria-hidden="true" id="icon"></i></div>
+            </div>
+            <div class="usuario-container">
+                <p>Usuário</p>
+            </div>
+            <div class="opiniao">
+                <p>Adorei a funcionalidade do site! Cheguei como turista em Recife<br>
+                e conheci os museus mais próximos da minha hospedagem. Muito útil!<br>
+                Não vejo a hora de voltar para conhecer todos esses lugares.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <h2 class="form-title">Entre em contato conosco</h2>
+        <form action="" method="post" class = "forms-newsletter">
+            <div class="nome-container">
+                <label for="name" class="form-label">Nome</label>
+                <input id ="name" type="text" name="name" class="form-input" placeholder="Digite seu nome">
+            </div>
+            <div class="email-container">
+                <label for="email" class="form-label">E-mail</label>
+                <input  id = "email" type="email" name="email" class="form-input" placeholder="Digite seu e-mail">
+            </div>
+            <div class="message-container">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea id = "massage" name="message" class="form-textarea" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="form-button">Enviar</button>
         </form>
-    </div>
-
-    <div class="opiniao-usuario">
-        <i class="fa fa-user" aria-hidden="true" id="icon"></i>
-        <div class="box" id="usuarios"></div>
-        <div class="nome-user"><p>usuário</p></div>
-    <div class="opiniao"><p>Adorei a funcionalidade do site! Cheguei como turista em Recife<br>
-        e conheci os museus mais próximos da minha hospedagem. Muito útil!<br>
-        Não vejo a hora de voltar para conhecer todos esses lugares.
-    </p></div>
-    <div class="circulo-user"></div>
-        <div class="circulo-user2"></div>
-    </div>
-
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="/arquivos/homem-do-nordeste.jpg" width="800" height="500" style="border-radius: 10px;">
-            <div class="text">Museu do Homem do Nordeste</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="/arquivos/cais.jpg"  width="800" height="500" style="border-radius: 10px;">
-            <div class="text">Cais do Sertão</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="/arquivos/forte-5-pontas.png" width="800" height="500" style="border-radius: 10px;">
-            <div class="text">Forte das 5 pontas</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="/arquivos/oficina-brennand.jpg"  width="800" height="500" style="border-radius: 10px;">
-            <div class="text">Instituto Brennand</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="/arquivos/museu-la-greca.jpg"  width="800" height="500" style="border-radius: 10px;">
-            <div class="text">Museu La Greca</div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
+    </section>
 </main>
 
 <footer>
