@@ -28,7 +28,6 @@ nav{
     background-color: white;
     position: fixed;
     width: 100%;
-    
     line-height: 80px;
     top: 0;
     box-shadow: 0 4px 16px 0 rgba( 0, 0, 0, 0.1 );
@@ -46,7 +45,6 @@ nav{
     position: relative;
     top: 20%;
     z-index: 3;
-
 }
     
 .navItems li a{
@@ -55,7 +53,6 @@ nav{
     letter-spacing: 3px;
     text-decoration: none;
     z-index: 1;
-
 }
     
 .navItems li:hover a{
@@ -72,10 +69,13 @@ nav{
     margin: 10px 10px;
     z-index: 1;
 }
+
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 main {
     width: 100%;
     margin-left: auto;
@@ -484,8 +484,4 @@ footer {
     text-align: center;
     color: grey;
     font-size: 12px;
-}
-
-html{
-scroll-behavior: smooth;
 }
