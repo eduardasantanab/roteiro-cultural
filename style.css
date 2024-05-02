@@ -486,4 +486,6 @@ footer {
     font-size: 12px;
 }
 
-/* Responsividade */
+html{
+scroll-behavior: smooth;
+}
