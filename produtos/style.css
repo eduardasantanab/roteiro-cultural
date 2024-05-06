@@ -8,8 +8,6 @@
                 0 0 100px var(--main-color);
 }
 
-
-
 /* pagina inicial */
 
 .header-container{
@@ -161,7 +159,7 @@ padding: 20px 0;
 
 
 .story-geral{
-    padding-left: 25%;
+    padding-left: 28%;
 }
 .story-geral ul li{
   padding: 0 10px;
@@ -209,5 +207,72 @@ position: relative;
     text-overflow: ellipsis;
     margin-top: 5px;
 
+}
+
+
+
+.text-animation span{
+    position: relative;
+   padding-left: 45%;
+}
+
+.text-animation span::before{
+    content: "COMPUTER SCIENCE student";
+    color: var(--main-color);
+    animation: words 1s infinite;
+}
+
+.text-animation span::after{
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: -8px;
+    animation: cursor 0.4s infinite, typing 0.5s steps(12) infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 2px solid var(--main-color);
+    }
+}
+@keyframes words{
+    0%,
+    33%{
+        content:"Nordeste";
+    }
+
+    34%,
+    66%{
+        content: "Pernambuco";
+    }
+
+    67%,
+    100%{
+        content: "Recife";
+    }    
+}
+@keyframes typing{
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    85%{
+        width: calc(100% + 8px);
+    }
 }
 
