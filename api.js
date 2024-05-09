@@ -3,7 +3,7 @@ Parse.serverURL = "https://parseapi.back4app.com/";
 
 async function searchMuseums(bairro) {
     try {
-        const url = 'http://dados.recife.pe.gov.br/api/3/action/datastore_search?resource_id=97ab18da-f940-43b1-b0d4-a9e93e90bed5&limit=1000';
+        const url = 'museus.json';
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -13,15 +13,15 @@ async function searchMuseums(bairro) {
         const museumsData = await response.json();
         console.log('Museus encontrados:', museumsData);
 
-        if (museumsData.result && museumsData.result.records) {
-            console.log('Records:', museumsData.result.records); // tirar isso depois
-            // Filtrar os museus pelo bairro fornecido pelo serviço ViaCep
-            const filteredMuseums = museumsData.result.records.filter(record => {
-                console.log('Bairro fornecido:', bairro);
-                return record.bairro && record.bairro.toLowerCase() === bairro.toLowerCase();
+        const records = museumsData.records; // Acessar os registros diretamente
+
+        if (records && records.length > 0) {
+            // Filtrar os museus pelo bairro fornecido
+            const filteredMuseums = records.filter(record => {
+                return record[3] && record[3].toLowerCase() === bairro.toLowerCase(); // Bairro está no índice 3
             });
             console.log('Museus filtrados:', filteredMuseums);
-            return filteredMuseums.map(record => ({ nome: record.nome, bairro: record.bairro }));
+            return filteredMuseums.map(record => ({ nome: record[1], bairro: record[3] })); // Nome do museu está no índice 1
         } else {
             throw new Error('Nenhum museu encontrado para o bairro fornecido.');
         }
@@ -88,12 +88,12 @@ async function saveAddressInfo(cep) {
         // Salvar todos os objetos do museu no banco de dados
         const savedMuseums = await Parse.Object.saveAll(museumObjects);
 
-                return addressData;
-            } catch (error) {
-                console.error("Erro ao salvar informações do endereço:", error);
-                throw error;
-            }
-        }
+        return addressData;
+    } catch (error) {
+        console.error("Erro ao salvar informações do endereço:", error);
+        throw error;
+    }
+}
 
 document.addEventListener('DOMContentLoaded', async function () {
     var forms = document.querySelector('.forms-container');
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             console.log('Endereço encontrado:', addressData);
 
             // Buscar todos os museus
-            const museumsData = await searchMuseums();
+            const museumsData = await searchMuseums(addressData.bairro);
             console.log('Museus encontrados:', museumsData);
 
             // Filtrar os museus pelo bairro do usuário
