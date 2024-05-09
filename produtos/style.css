@@ -146,7 +146,7 @@ button{
 button:hover{
     background-color: #6b3fa0;
 }
-
+ 
 
 .story-geral ul{
 
@@ -210,6 +210,9 @@ position: relative;
 }
 
 
+.story{
+    cursor: pointer;
+}
 
 .text-animation span{
     position: relative;
