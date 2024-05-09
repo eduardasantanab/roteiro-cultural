@@ -3,9 +3,9 @@
 }
 
 .card:hover{
-    box-shadow: 0 0 8px var(--main-color),
-                0 0 12px var(--main-color),
-                0 0 15px var(--main-color);
+    box-shadow: 0 0 2px var(--main-color),
+                0 0 3px var(--main-color),
+                0 0 4px var(--main-color);
 }
 
 /* pagina inicial */
@@ -146,7 +146,6 @@ button{
 button:hover{
     background-color: #6b3fa0;
 }
- 
 
 .story-geral ul{
 
@@ -156,7 +155,6 @@ display: flex;
 overflow-y: auto;
 padding: 20px 0;
 }
-
 
 .story-geral{
     padding-left: 28%;
@@ -180,35 +178,32 @@ padding: 20px 0;
 width: 75px;
 height: 75px;
 border-radius: 50%;
-background: rgba( 255, 255, 255, 0.75 ) ;
+background: rgba( 0, 255, 200, 0.5 ) ;
 padding: 1px;
 position: relative;
 }
 
 .story-geral ul li.has-story .story{
-   padding: 2px; 
+   padding: 2px;
    background: linear-gradient(45deg,#9e02dc 0%,#ae3eef 25%, #e84eea 50%, #be69e9 75%, #d0ef36 100%);
 }
 
 .story-geral ul li .story img{
     padding: 4px;
-    background: currentColor;
     border-radius:50%;
     width: 100%;
     height: 100%;
 }
 
 .story-geral ul li span{
-    
+    color: grey;
     font-weight: 300;
     font-size: 15px;
     max-width:85px;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 5px;
-
 }
-
 
 .story{
     cursor: pointer;
@@ -216,7 +211,7 @@ position: relative;
 
 .text-animation span{
     position: relative;
-   padding-left: 45%;
+    padding-left: 45%;
 }
 
 .text-animation span::before{
