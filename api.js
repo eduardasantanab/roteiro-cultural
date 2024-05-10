@@ -1,6 +1,6 @@
 Parse.initialize("v6UGSvLazH3FwPjOZPHajXTAFWyxelCPi1BJ5HAn", "SQzEsdUghX0atms3dAziOGhDPyd3lDDu9wGPeAYn");
 Parse.serverURL = "https://parseapi.back4app.com/";
-const global = [];
+let filteredMuseums = '';
 
 // Essa função filtra os museus do banco de dados da prefeitura.
 async function searchMuseums(bairro) {
@@ -19,11 +19,11 @@ async function searchMuseums(bairro) {
 
         if (records && records.length > 0) {
             // Filtrar os museus pelo bairro fornecido
-            const filteredMuseums = records.filter(record => {
+            filteredMuseums = records.filter(record => {
                 return record[3] && record[3].toLowerCase() === bairro.toLowerCase(); // Bairro está no índice 3
             });
             console.log('Museus filtrados:', filteredMuseums);
-            global.push(filteredMuseums);
+            global = filteredMuseums;
             return filteredMuseums.map(record => ({ nome: record[1], bairro: record[3] })); // Nome do museu está no índice 1
         } else {
             throw new Error('Nenhum museu encontrado para o bairro fornecido.');
@@ -144,11 +144,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const exibir = () => {
         exibicao.innerHTML = '';
-        const arrayInterno = global[0];
         
-        for (i = 0; i < global.length; i++) {
+        for (i = 0; i < filteredMuseums.length; i++) {
+            const arrayInterno = filteredMuseums[i];
             const values = document.createElement('div');
-            const texto = document.createTextNode(arrayInterno[i])
+            const numeracao = document.createElement('span');
+            const texto = document.createTextNode(arrayInterno[1]);
+
+            numeracao.innerText = (i + 1) + '.'
+            values.appendChild(numeracao)
             values.appendChild(texto)
 
             exibicao.appendChild(values);

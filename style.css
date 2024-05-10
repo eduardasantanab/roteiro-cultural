@@ -225,6 +225,18 @@ main {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.output-container span {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin: 5px;
+}
     
 /* slide carrossel */
 
