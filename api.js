@@ -146,16 +146,39 @@ document.addEventListener('DOMContentLoaded', function () {
         exibicao.innerHTML = '';
         
         for (i = 0; i < filteredMuseums.length; i++) {
+            // array de informações de um museu dentro do array de todos os museus
             const arrayInterno = filteredMuseums[i];
-            const values = document.createElement('div');
+
+            // container div pai para armazenar todo o conteúdo 
+            const museuContainer = document.createElement('div');
+            museuContainer.classList.add('museu-container');
+
+            // numeração para cada museu apenas para organizar
             const numeracao = document.createElement('span');
+            numeracao.innerText = (i + 1)
+
+            // dados do museu
             const texto = document.createTextNode(arrayInterno[1]);
+            const nomeMuseu = document.createElement('div');
+            nomeMuseu.appendChild(texto)
+            nomeMuseu.classList.add('nome-museu');
 
-            numeracao.innerText = (i + 1) + '.'
-            values.appendChild(numeracao)
-            values.appendChild(texto)
+            const texto2 = document.createTextNode(arrayInterno[2]);
+            const descricaoMuseu = document.createElement('div');
+            descricaoMuseu.appendChild(texto2)
 
-            exibicao.appendChild(values);
+
+            // organização: botando dados do museu dentro de uma div e atribuindo uma classe
+            const valuesAPI = document.createElement('div');
+            valuesAPI.append(nomeMuseu);
+            valuesAPI.append(descricaoMuseu);
+            valuesAPI.classList.add('banco-de-dados-museus');
+
+            // exibição de dados dos museus
+            museuContainer.appendChild(numeracao)
+            museuContainer.appendChild(valuesAPI)
+
+            exibicao.appendChild(museuContainer);
         }
     }
 
