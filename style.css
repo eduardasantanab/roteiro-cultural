@@ -199,6 +199,32 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* output-container: exibição do filtro de museus da api: */
+
+.output-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    max-width: 1300px;
+}
+.output-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    height: 40px;
+    min-width: 50px;
+    padding: 6px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 6px 20px 0 rgba(47, 51, 116, 0.2);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
     
 /* slide carrossel */
 

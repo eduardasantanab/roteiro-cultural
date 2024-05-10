@@ -1,6 +1,8 @@
 Parse.initialize("v6UGSvLazH3FwPjOZPHajXTAFWyxelCPi1BJ5HAn", "SQzEsdUghX0atms3dAziOGhDPyd3lDDu9wGPeAYn");
 Parse.serverURL = "https://parseapi.back4app.com/";
+const global = [];
 
+// Essa função filtra os museus do banco de dados da prefeitura.
 async function searchMuseums(bairro) {
     try {
         const url = 'museus.json';
@@ -21,6 +23,7 @@ async function searchMuseums(bairro) {
                 return record[3] && record[3].toLowerCase() === bairro.toLowerCase(); // Bairro está no índice 3
             });
             console.log('Museus filtrados:', filteredMuseums);
+            global.push(filteredMuseums);
             return filteredMuseums.map(record => ({ nome: record[1], bairro: record[3] })); // Nome do museu está no índice 1
         } else {
             throw new Error('Nenhum museu encontrado para o bairro fornecido.');
@@ -31,6 +34,7 @@ async function searchMuseums(bairro) {
     }
 }
 
+// Essa função organiza e armazena os museus do mesmo bairro do usuário.
 async function saveAddressInfo(cep) {
     try {
         const url = `https://viacep.com.br/ws/${cep}/json`;
@@ -94,6 +98,7 @@ async function saveAddressInfo(cep) {
     }
 }
 
+// Essa função busca informções do cep informado pelo usuário
 document.addEventListener('DOMContentLoaded', async function () {
     var forms = document.querySelector('.forms-container');
     var campo = document.querySelector('.box-c');
@@ -125,4 +130,33 @@ document.addEventListener('DOMContentLoaded', async function () {
             campo.value = '';
         }
     });
+
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const armazenarValores = document.querySelector('.forms-container');
+    const exibicao = document.querySelector('.output-container');
+    const cleanButton = document.querySelector('.clean-button');
+
+    armazenarValores.addEventListener('submit', function (e) {
+        e.preventDefault();
+        exibir()
+    });
+
+    const exibir = () => {
+        exibicao.innerHTML = '';
+        const arrayInterno = global[0];
+        
+        for (i = 0; i < global.length; i++) {
+            const values = document.createElement('div');
+            const texto = document.createTextNode(arrayInterno[i])
+            values.appendChild(texto)
+
+            exibicao.appendChild(values);
+        }
+    }
+
+    cleanButton.addEventListener('click', () => {
+        global.splice(0, global.length)
+        exibir()
+    })
 });
