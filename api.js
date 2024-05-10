@@ -126,9 +126,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             console.error('Ocorreu um erro:', error);
             throw error;
         }
-        finally {
-            campo.value = '';
-        }
     });
 
 });
@@ -137,9 +134,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const exibicao = document.querySelector('.output-container');
     const cleanButton = document.querySelector('.clean-button');
 
-    armazenarValores.addEventListener('submit', function (e) {
+    armazenarValores.addEventListener('submit', async function (e) {
         e.preventDefault();
-        exibir()
+        const campo = document.querySelector('.box-c');
+        const valorInput = campo.value.trim();
+        console.log('CEP fornecido pelo usuário:', valorInput);
+
+        try {
+            // o await para esperar a resposta dos dados
+            const addressData = await saveAddressInfo(valorInput);
+            console.log('Endereço encontrado:', addressData);
+
+            // exibe os museus após obter e filtrar os dados
+            exibir();
+
+        } catch (error) {
+            console.error('Ocorreu um erro:', error);
+            throw error;
+        }
+        finally {
+            // limpa input
+            campo.value = '';
+        }
     });
 
     const exibir = () => {
