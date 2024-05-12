@@ -34,7 +34,7 @@ async function searchMuseums(bairro) {
     }
 }
 
-// Essa função organiza e armazena os museus do mesmo bairro do usuário.
+
 async function saveAddressInfo(cep) {
     try {
         const url = `https://viacep.com.br/ws/${cep}/json`;
@@ -50,7 +50,7 @@ async function saveAddressInfo(cep) {
         // Extrair o bairro dos dados do endereço
         let bairro = addressData.bairro;
 
-        // Se o bairro não estiver disponível, procurar outras propriedades que possam conter essa informação
+        // Se o bairro não estiver disponivel, procurar outras propriedades que possam conter essa informação
         if (!bairro) {
             bairro = addressData.sublocality || addressData.subLocality || addressData.sublocality_level_1 || addressData.subLocalityLevel1;
         }
@@ -74,7 +74,7 @@ async function saveAddressInfo(cep) {
         address.set("uf", addressData.uf);
 
         await address.save();
-        console.log('Endereço salvo no banco de dados:', address); // Adicionando o console.log para verificar se os dados foram salvos
+        console.log('Endereço salvo no banco de dados:', address);
 
         // Chamar a função para buscar os museus no bairro do usuário
         const museumsData = await searchMuseums(bairro);
@@ -112,15 +112,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         try {
             // Buscar informações do endereço a partir do CEP fornecido pelo usuário
             const addressData = await saveAddressInfo(valorInput);
-            console.log('Endereço encontrado:', addressData);
 
             // Buscar todos os museus
             const museumsData = await searchMuseums(addressData.bairro);
-            console.log('Museus encontrados:', museumsData);
 
-            // Filtrar os museus pelo bairro do usuário
+            // Filtrar os museus pelo bairro do usuario
             const filteredMuseums = museumsData.filter(museum => museum.bairro === addressData.localidade);
-            console.log('Museus encontrados no bairro do usuário:', filteredMuseums);
 
         } catch (error) {
             console.error('Ocorreu um erro:', error);
@@ -140,12 +137,19 @@ document.addEventListener('DOMContentLoaded', function () {
         const valorInput = campo.value.trim();
         console.log('CEP fornecido pelo usuário:', valorInput);
 
-        try {
-            // o await para esperar a resposta dos dados
-            const addressData = await saveAddressInfo(valorInput);
-            console.log('Endereço encontrado:', addressData);
+        // Remover o conteúdo anterior antes de exibir o gif de carregamento
+        exibicao.innerHTML = '';
 
-            // exibe os museus após obter e filtrar os dados
+        // Verificar se o campo não está vazio antes de exibir a animação de carregamento
+        if (valorInput !== '') {
+            // Exibir a animação de carregamento
+            const loading = createLoadingAnimation();
+            exibicao.appendChild(loading);
+        }
+
+        try {
+            const addressData = await saveAddressInfo(valorInput);
+
             exibir();
 
         } catch (error) {
@@ -153,48 +157,58 @@ document.addEventListener('DOMContentLoaded', function () {
             throw error;
         }
         finally {
-            // limpa input
+            exibicao.removeChild(loading);
             campo.value = '';
         }
     });
 
     const exibir = () => {
+
         exibicao.innerHTML = '';
-        
-        for (i = 0; i < filteredMuseums.length; i++) {
-            // array de informações de um museu dentro do array de todos os museus
-            const arrayInterno = filteredMuseums[i];
 
-            // container div pai para armazenar todo o conteúdo 
-            const museuContainer = document.createElement('div');
-            museuContainer.classList.add('museu-container');
+        if (filteredMuseums.length > 0) {
+            for (let i = 0; i < filteredMuseums.length; i++) {
 
-            // numeração para cada museu apenas para organizar
-            const numeracao = document.createElement('span');
-            numeracao.innerText = (i + 1)
+                // array de informações de um museu dentro do array de todos os museus
+                const arrayInterno = filteredMuseums[i];
 
-            // dados do museu
-            const texto = document.createTextNode(arrayInterno[1]);
-            const nomeMuseu = document.createElement('div');
-            nomeMuseu.appendChild(texto)
-            nomeMuseu.classList.add('nome-museu');
+                // container div pai para armazenar todo o conteúdo
+                const museuContainer = document.createElement('div');
+                museuContainer.classList.add('museu-container');
 
-            const texto2 = document.createTextNode(arrayInterno[2]);
-            const descricaoMuseu = document.createElement('div');
-            descricaoMuseu.appendChild(texto2)
+                // numeração para cada museu apenas para organizar
+                const numeracao = document.createElement('span');
+                numeracao.innerText = (i + 1);
 
+                // dados do museu
+                const texto = document.createTextNode(arrayInterno[1]);
+                const nomeMuseu = document.createElement('div');
+                nomeMuseu.appendChild(texto);
+                nomeMuseu.classList.add('nome-museu');
 
-            // organização: botando dados do museu dentro de uma div e atribuindo uma classe
-            const valuesAPI = document.createElement('div');
-            valuesAPI.append(nomeMuseu);
-            valuesAPI.append(descricaoMuseu);
-            valuesAPI.classList.add('banco-de-dados-museus');
+                const texto2 = document.createTextNode(arrayInterno[2]);
+                const descricaoMuseu = document.createElement('div');
+                descricaoMuseu.appendChild(texto2);
 
-            // exibição de dados dos museus
-            museuContainer.appendChild(numeracao)
-            museuContainer.appendChild(valuesAPI)
+                // organização: botando dados do museu dentro de uma div e atribuindo uma classe
+                const valuesAPI = document.createElement('div');
+                valuesAPI.append(nomeMuseu);
+                valuesAPI.append(descricaoMuseu);
+                valuesAPI.classList.add('banco-de-dados-museus');
 
-            exibicao.appendChild(museuContainer);
+                // exibição de dados dos museus
+                museuContainer.appendChild(numeracao);
+                museuContainer.appendChild(valuesAPI);
+
+                exibicao.appendChild(museuContainer);
+            }
+        } else {
+            const mensagem = document.createElement('h1');
+            mensagem.innerText = 'Ops! Infelizmente nenhum museu foi encontrado no CEP fornecido. Veja nossas recomendações abaixo.';
+            mensagem.style.color = 'red';
+            mensagem.style.fontFamily = 'Arial, sans-serif';
+            mensagem.style.fontSize = '18px';
+            exibicao.appendChild(mensagem);
         }
     }
 
@@ -202,4 +216,15 @@ document.addEventListener('DOMContentLoaded', function () {
         global.splice(0, global.length)
         exibir()
     })
+
+    function createLoadingAnimation() {
+        const loading = document.createElement('div');
+        loading.classList.add('loading-container');
+        const loadingImg = document.createElement('img');
+        loadingImg.src = '/arquivos/icons8-spinner.gif';
+        loadingImg.alt = 'Carregando...';
+        loading.appendChild(loadingImg);
+        return loading;
+    }
+
 });
