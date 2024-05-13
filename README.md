@@ -11,7 +11,7 @@ Grupo:
 
 A implementação da plataforma Rota Cultural é uma iniciativa destinada a promover<br/>
 e facilitar a descoberta de patrimônios culturais presentes nos diversos bairros de<br/>
-Recife. Nosso objetivo é criar um sistema de recomendação de museus, oferecendo uma<br/>
+Recife. Nosso objetivo foi criar um sistema de recomendação de museus, oferecendo uma<br/>
 experiência enriquecedora para turistas e entusiastas da cultura pernambucana.<br/>
 
 Com recursos avançados de recomendação e uma interface intuitiva, a Rota Cultural oferece<br/>
