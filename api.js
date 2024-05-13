@@ -79,18 +79,6 @@ async function saveAddressInfo(cep) {
         // Chamar a função para buscar os museus no bairro do usuário
         const museumsData = await searchMuseums(bairro);
 
-       // Armazenar os museus no banco de dados relacionados ao endereço
-        const Museum = Parse.Object.extend("Museum");
-        const museumObjects = museumsData.map(museum => {
-        const museumObject = new Museum();
-            museumObject.set("nome", museum.nome);
-            museumObject.set("endereco", address); // Passar o objeto de endereço diretamente
-            museumObject.set("cep", addressData.cep);
-            return museumObject;
-        })
-        // Salvar todos os objetos do museu no banco de dados
-        const savedMuseums = await Parse.Object.saveAll(museumObjects);
-
         return addressData;
     } catch (error) {
         console.error("Erro ao salvar informações do endereço:", error);
