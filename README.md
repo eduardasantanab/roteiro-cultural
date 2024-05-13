@@ -9,18 +9,55 @@ Grupo:
 
 ### > Apresentação do projeto
 
-O site Rota Cultural tem como objetivo executar um sistema de recomendação de<br/>
-Museus localizados nos diversos bairros de Recife. O público alvo para esta<br/>
-aplicação refere-se a turistas ou amantes da cultura pernambucana, que desejam<br/>
-encontrar os pontos mais próximos da sua localização atual, que possam desfrutar<br/>
-da experiência rica em Museus.<br/>
+A implementação da plataforma Rota Cultural é uma iniciativa destinada a promover<br/>
+e facilitar a descoberta de patrimônios culturais presentes nos diversos bairros de<br/>
+Recife. Nosso objetivo é criar um sistema de recomendação de museus, oferecendo uma<br/>
+experiência enriquecedora para turistas e entusiastas da cultura pernambucana.<br/>
 
-No site é possível encontrar abas de recomendações, lojas e um espaço para contato.<br/><br/>
+Com recursos avançados de recomendação e uma interface intuitiva, a Rota Cultural oferece<br/>
+uma maneira única e envolvente de explorar os museus da região, a partir do CEP do usuário<br/>
+como dado de entrada, proporcionando benefícios tanto para os visitantes quanto para os<br/>
+proprietários de museus e lojas associadas. 
+
+No site é possível encontrar abas de recomendações, com os museus mais visitados; lojas, com<br/>
+produtos de empresas locais e parceiras; e um espaço para contato.<br/><br/>
+
+### Objetivos
+
+- Recomendação Personalizada: Desenvolver um algoritmo inteligente que, com base na localização do<br/>
+usuário e em seus interesses culturais, sugira os museus mais relevantes para visita, proporcionando<br/>
+uma experiência personalizada e significativa.
+
+- Facilidade de Acesso: Criar uma interface intuitiva e amigável, onde os usuários possam encontrar<br/>
+facilmente informações sobre os museus, como horários de funcionamento, exposições em destaque, e outras<br/>
+atividades culturais disponíveis.
+
+- Promoção do Turismo Cultural: Contribuir para o crescimento do turismo cultural em Recife, destacando a<br/>
+diversidade e a riqueza dos museus da região, e incentivando a visitação e a valorização desses espaços.<br/><br/>
+
+### > Recursos da Plataforma
+
+1. **Barra de pesquisa:** Um espaço dedicado à interação com o usuário e responsável por realizar<br/>
+e exibir o resultado da pesquisa, com todas as recomendações de museus próximos àquele CEP.<br/>
+Se o CEP informado não encontrar museus próximos ao usuário, é exibida uma mensagem de não<br/>
+encontrado.
+   
+2. **Aba de Recomendações:** Um espaço dedicado a apresentar sugestões de museus com base nas<br/>
+preferências do usuário e na proximidade de sua localização atual, proporcionando uma experiência<br/>
+de descoberta única e personalizada.<br/>
+
+3. **Lojas Associadas:** Uma seção destinada a promover lojas de souvenirs e produtos relacionados aos<br/>
+museus, permitindo que os visitantes levem consigo lembranças autênticas de sua experiência cultural<br/>
+em Recife.<br/>
+
+4. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários e a<br/>
+equipe responsável pela plataforma, onde dúvidas, sugestões e feedbacks podem ser compartilhados,<br/>
+contribuindo para o aprimoramento contínuo do serviço.<br/><br/>
 
 ### > Ferramentas utilizadas
 
+- Conceitos de HTML, CSS e JavaScript
 - API de localização de CEP
 - Back4app para implementar o backend e entrada de dados
-- Base de dados da Prefeitura do Recife para o rastreio de museus
-  
+- Base de dados da Prefeitura do Recife para o rastreio de museus<br/><br/>
 
