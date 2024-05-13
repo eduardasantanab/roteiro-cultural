@@ -22,7 +22,7 @@ proprietários de museus e lojas associadas.
 No site é possível encontrar abas de recomendações, com os museus mais visitados; lojas, com<br/>
 produtos de empresas locais e parceiras; e um espaço para contato.<br/><br/>
 
-### Objetivos
+### > Objetivos
 
 - Recomendação Personalizada: Desenvolver um algoritmo inteligente que, com base na localização do<br/>
 usuário e em seus interesses culturais, sugira os museus mais relevantes para visita, proporcionando<br/>
