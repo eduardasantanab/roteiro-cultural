@@ -37,14 +37,14 @@ diversidade e a riqueza dos museus da região, e incentivando a visitação e a 
 
 ### > Recursos da Plataforma
 
-1. **Barra de pesquisa:** Um espaço dedicado à interação com o usuário e responsável por realizar<br/>
-e exibir o resultado da pesquisa, com todas as recomendações de museus próximos àquele CEP.<br/>
-Se o CEP informado não encontrar museus próximos ao usuário, é exibida uma mensagem de não<br/>
+1. **Barra de pesquisa:** Um espaço dedicado a apresentar sugestões de museus com base na<br/>
+proximidade de sua localização atual, proporcionando uma experiência de descoberta única e<br/>
+personalizada ao usuário. Nesse espaço, o usuário adiciona um CEP e o resultado é exibido.<br/>
+Se o CEP informado não mapear museus próximos ao usuário, é exibida uma mensagem de não<br/>
 encontrado.
    
-2. **Aba de Recomendações:** Um espaço dedicado a apresentar sugestões de museus com base nas<br/>
-preferências do usuário e na proximidade de sua localização atual, proporcionando uma experiência<br/>
-de descoberta única e personalizada.<br/>
+2. **Aba de Recomendações:** Um seção dedicada a exibir um carrossel de recomendações de<br/>
+museus com base nos museus mais visitados e mais bem avaliados pelos usuários da plataforma.<br/>
 
 3. **Lojas Associadas:** Uma seção destinada a promover lojas de souvenirs e produtos relacionados aos<br/>
 museus, permitindo que os visitantes levem consigo lembranças autênticas de sua experiência cultural<br/>
