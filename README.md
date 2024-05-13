@@ -41,18 +41,27 @@ diversidade e a riqueza dos museus da região, e incentivando a visitação e a 
 proximidade de sua localização atual, proporcionando uma experiência de descoberta única e<br/>
 personalizada ao usuário. Nesse espaço, o usuário adiciona um CEP e o resultado é exibido.<br/>
 Se o CEP informado não mapear museus próximos ao usuário, é exibida uma mensagem de não<br/>
-encontrado.
+encontrado.<br/>
+
+- Resultado da recomendação:<br/>
+<img src="/arquivos/resultado.png"/><br/><br/>
+
+- Back4app para o armazenamento dos dados de entrada do formulário de CEP, com endereço dos usuários:<br/>
+<img src="/arquivos/back4app-cep.webp"/>
    
-2. **Aba de Recomendações:** Um seção dedicada a exibir um carrossel de recomendações de<br/>
+3. **Aba de Recomendações:** Um seção dedicada a exibir um carrossel de recomendações de<br/>
 museus com base nos museus mais visitados e mais bem avaliados pelos usuários da plataforma.<br/>
 
-3. **Lojas Associadas:** Uma seção destinada a promover lojas locais e produtos relacionados aos<br/>
+4. **Lojas Associadas:** Uma seção destinada a promover lojas locais e produtos relacionados aos<br/>
 museus, permitindo que os visitantes e usuários possam adquirir lembranças autênticas de sua<br/>
 experiência cultural em Recife.<br/>
 
-4. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários<br/>
+5. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários<br/>
 e a equipe responsável pela plataforma, onde dúvidas, avaliações, sugestões e feedbacks podem ser<br/>
 compartilhados, contribuindo para o aprimoramento contínuo do serviço.<br/><br/>
+
+- Armazenamento dos dados de entrada para contato no Back4app:<br/>
+<img src="/arquivos/back4app-contato.webp"/>
 
 ### > Ferramentas utilizadas
 
