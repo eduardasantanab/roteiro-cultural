@@ -15,7 +15,7 @@ aplicação refere-se a turistas ou amantes da cultura pernambucana, que desejam
 encontrar os pontos mais próximos da sua localização atual, que possam desfrutar<br/>
 da experiência rica em Museus.<br/>
 
-No site é possível encontrar abas de recomendações, lojas e um espaço para contato.<br/>
+No site é possível encontrar abas de recomendações, lojas e um espaço para contato.<br/><br/>
 
 ### > Ferramentas utilizadas
 
