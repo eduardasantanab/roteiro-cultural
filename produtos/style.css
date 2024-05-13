@@ -209,25 +209,6 @@ position: relative;
     cursor: pointer;
 }
 
-.text-animation span{
-    position: relative;
-    padding-left: 45%;
-}
-
-.text-animation span::before{
-    content: "COMPUTER SCIENCE student";
-    color: var(--main-color);
-    animation: words 1s infinite;
-}
-
-.text-animation span::after{
-    content: "";
-    background-color: var(--main-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: -8px;
-    animation: cursor 0.4s infinite, typing 0.5s steps(12) infinite;
-}
 
 
 
