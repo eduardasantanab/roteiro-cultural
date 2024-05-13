@@ -46,13 +46,13 @@ encontrado.
 2. **Aba de Recomendações:** Um seção dedicada a exibir um carrossel de recomendações de<br/>
 museus com base nos museus mais visitados e mais bem avaliados pelos usuários da plataforma.<br/>
 
-3. **Lojas Associadas:** Uma seção destinada a promover lojas de souvenirs e produtos relacionados aos<br/>
-museus, permitindo que os visitantes levem consigo lembranças autênticas de sua experiência cultural<br/>
-em Recife.<br/>
+3. **Lojas Associadas:** Uma seção destinada a promover lojas locais e produtos relacionados aos<br/>
+museus, permitindo que os visitantes e usuários possam adquirir lembranças autênticas de sua<br/>
+experiência cultural em Recife.<br/>
 
-4. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários e a<br/>
-equipe responsável pela plataforma, onde dúvidas, sugestões e feedbacks podem ser compartilhados,<br/>
-contribuindo para o aprimoramento contínuo do serviço.<br/><br/>
+4. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários<br/>
+e a equipe responsável pela plataforma, onde dúvidas, avaliações, sugestões e feedbacks podem ser<br/>
+compartilhados, contribuindo para o aprimoramento contínuo do serviço.<br/><br/>
 
 ### > Ferramentas utilizadas
 
