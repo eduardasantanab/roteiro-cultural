@@ -229,48 +229,5 @@ position: relative;
     animation: cursor 0.4s infinite, typing 0.5s steps(12) infinite;
 }
 
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);
-    }
-}
-@keyframes words{
-    0%,
-    33%{
-        content:"Nordeste";
-    }
 
-    34%,
-    66%{
-        content: "Pernambuco";
-    }
-
-    67%,
-    100%{
-        content: "Recife";
-    }    
-}
-@keyframes typing{
-    10%,
-    20%,
-    30%,
-    40%,
-    50%,
-    60%,
-    70%,
-    80%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    30%,
-    40%,
-    50%,
-    60%,
-    70%,
-    85%{
-        width: calc(100% + 8px);
-    }
-}
 
