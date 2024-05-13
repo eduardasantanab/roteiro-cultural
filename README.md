@@ -13,7 +13,7 @@ O site Rota Cultural tem como objetivo executar um sistema de recomendação de<
 Museus localizados nos diversos bairros de Recife. O público alvo para esta<br/>
 aplicação refere-se a turistas ou amantes da cultura pernambucana, que desejam<br/>
 encontrar os pontos mais próximos da sua localização atual, que possam desfrutar<br/>
-da experiência rica em Museus.<br/><br/>
+da experiência rica em Museus.<br/>
 
 No site é possível encontrar abas de recomendações, lojas e um espaço para contato.<br/>
 
