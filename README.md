@@ -58,7 +58,7 @@ experiência cultural em Recife.<br/>
 
 5. **Espaço para Contato:** Uma seção destinada para o canal de comunicação direta entre os usuários<br/>
 e a equipe responsável pela plataforma, onde dúvidas, avaliações, sugestões e feedbacks podem ser<br/>
-compartilhados, contribuindo para o aprimoramento contínuo do serviço.<br/><br/>
+compartilhados, contribuindo para o aprimoramento contínuo do serviço.<br/>
 
 - Armazenamento dos dados de entrada para contato no Back4app:<br/>
 <img src="/arquivos/back4app-contato.webp"/>
